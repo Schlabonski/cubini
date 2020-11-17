@@ -62,7 +62,7 @@ class ComPort(object):
         self.stopbits = 1
         self.databits = 8
 
-        if os.name = 'nt':
+        if os.name == 'nt':
             usb_device.set_configuration()
             cfg = usb_device.configurations()[0]
         else:
