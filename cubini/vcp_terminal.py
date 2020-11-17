@@ -62,7 +62,11 @@ class ComPort(object):
         self.stopbits = 1
         self.databits = 8
 
-        cfg = usb_device.get_active_configuration()
+        if os.name = 'nt':
+            usb_device.set_configuration()
+            cfg = usb_device.configurations()[0]
+        else:
+            cfg = usb_device.get_active_configuration()
 
         if self.device.idVendor == 0x0403:       # FTDI device
             self._isFTDI = True
