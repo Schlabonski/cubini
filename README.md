@@ -1,5 +1,5 @@
 # cubini
-A python library to control several Thorlabs' KPZ101 piezo controler cubes
+A python library to control several Thorlabs' KPZ101 piezo controler cubes. Each KPZ101 is interfaced using the virtual com port [implementation](https://github.com/pyusb/pyusb/blob/master/tools/vcp_terminal.py) of `pyusb`.
 
 ## Installation
 To install the package from source simply do
