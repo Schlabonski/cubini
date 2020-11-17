@@ -4,7 +4,7 @@ A python library to control several Thorlabs' KPZ101 piezo controler cubes
 ## Installation
 To install the package from source simply do
 ```
-git clone https://github.com/Schlabonski/cubini`
+git clone https://github.com/Schlabonski/cubini
 cd cubini
 python3 setup.py install
 ```
