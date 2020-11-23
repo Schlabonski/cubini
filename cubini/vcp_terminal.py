@@ -396,7 +396,7 @@ class ComPort(object):
 
 def configLog():
     log = logging.getLogger("vcp_terminal")
-    log.setLevel(logging.DEBUG)
+    log.setLevel(logging.ERROR)
     if "PYTERMINAL_DEBUG" in os.environ:
         fileHandler = logging.FileHandler("terminal.log")
         log_fmt = logging.Formatter(
