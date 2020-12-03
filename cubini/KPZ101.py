@@ -99,6 +99,6 @@ class KPZ101():
         Set the output voltage.
         MGMSG_PZ_SET_OUTPUTVOLTS
         '''
-        assert v>=0 and v<self.max_voltage, 'Voltage out of limits!'
+        assert v>=0 and v<=self.max_voltage, 'Voltage out of limits!'
         voltage_device_units = int(self.device_unit_sf * v)
         self.com.write(pack('<HBBBBHH',0x0643,0x04,0x00,self.destination|0x80,self.source,self.channel,voltage_device_units))
